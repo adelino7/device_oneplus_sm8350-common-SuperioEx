@@ -49,4 +49,8 @@
 
     <!-- Battery Health -->
     <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batteryChargeCycles">/sys/class/oplus_chg/battery/battery_cc</string>
+    <string name="config_batteryHealthNode">/sys/class/power_supply/battery/health</string>
+    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/battery/charge_full</string>
+    <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/battery/charge_full_design</string>
 </resources>

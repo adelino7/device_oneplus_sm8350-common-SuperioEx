@@ -27,6 +27,16 @@
 
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
+
+         <!-- Whether to show min/max refresh rate in display settings -->
+     <bool name="config_show_refresh_rate_controls">false</bool>
+     <bool name="config_supports_dynamic_refresh_rate_controls">true</bool>
+
+          <!-- Fingerprint -->
+     <bool name="config_is_front_facing_fps" translatable="false">false</bool>
+
+         <!-- Whether to enable Lineage Fast Charge Prefernece -->
+    <bool name="config_lineageFastChargeSupported">false</bool>
     
     <!-- The number of vibration intensity levels supported by the device.
 
@@ -47,11 +57,15 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
-    <!-- Battery Health -->
+    <!-- Battery Health
     <bool name="config_supportBatteryHealth">true</bool>
-    <string name="config_batteryRemainingCapacityNode">/sys/class/oplus_chg/battery/battery_rm</string>
     <string name="config_batteryChargeCycles">/sys/class/oplus_chg/battery/battery_cc</string>
     <string name="config_batteryHealthNode">/sys/class/power_supply/battery/health</string>
     <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/battery/charge_full</string>
     <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/battery/charge_full_design</string>
+          Battery health -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
+    <string name="config_batteryChargeCycles">/sys/class/oplus_chg/battery/battery_cc</string>
+    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/battery/charge_full</string>
 </resources>

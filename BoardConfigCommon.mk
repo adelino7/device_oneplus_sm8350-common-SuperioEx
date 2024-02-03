@@ -29,6 +29,9 @@ AB_OTA_PARTITIONS += \
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := RMX3312|porsche|RE58B2L1|lahaina|RMX3311|RE52BL1
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod

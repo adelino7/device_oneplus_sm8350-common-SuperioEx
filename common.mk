@@ -324,16 +324,12 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage \
-    $(LOCAL_PATH)/overlay-evolution
+    $(LOCAL_PATH)/overlay-lineage
+#    $(LOCAL_PATH)/overlay-evolution
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
-    EvolutionFrameworksResCommon \
-    EvolutionSettingsProviderResCommon \
-    EvolutionSettingsResCommon \
-    EvolutionSystemUIResCommon \
     OPlusExtrasResCommon \
     FaceUnlockServiceResCommon \
     FrameworksResTarget \
@@ -341,6 +337,7 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     WifiResTarget
+   #EvolutionSettingsProviderResCommon \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
